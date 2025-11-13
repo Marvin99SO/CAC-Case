@@ -1,12 +1,12 @@
 SELECT 
     id, 
-    callid, 
-    data_hora, 
+    callid AS id_atendimento, 
+    data_hora AS data_atendimento, 
     fila, 
-    espera, 
-    atendimento, 
+    espera AS tempo_fila, 
+    atendimento AS tempo_atendimento, 
     sentido, 
-    nota2, 
+    nota2 AS nota_nps, 
     agente
 FROM 
     data_test.native_chamadas_atendidas;
